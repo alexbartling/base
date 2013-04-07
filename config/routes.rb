@@ -1,4 +1,10 @@
 Base::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/about"
+
+  get "pages/contact"
+  root to: 'pages#home'
   devise_for :users
 
   # The priority is based upon order of creation:
